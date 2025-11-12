@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阮氏清賢｜個人介紹</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+      background: #fdf6f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      background-color: #ffb6c1;
+      color: white;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 20px;
+    }
+    .student-card {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      max-width: 600px;
+      transition: transform 0.3s;
+    }
+    .student-card:hover {
+      transform: scale(1.02);
+    }
+    .student-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .student-info {
+      padding: 20px;
+    }
+    .student-info h3 {
+      margin-top: 0;
+      color: #d63384;
+    }
+    .student-info p {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #fce4ec;
+      color: #666;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      .student-card {
+        flex-direction: column;
+      }
+      .student-card img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>阮氏清賢 Nguyen Thi Thanh Hien</h1>
+    <p>越南留學生｜熱愛音樂與旅遊</p>
+  </header>
+
+  <main>
+    <div class="student-card">
+      <img src="images/thanhhien.jpeg" alt="阮氏清賢 Nguyen Thi Thanh Hien">
+      <div class="student-info">
+        <h3>關於我</h3>
+        <p>國籍：越南｜年齡：21</p>
+        <p>興趣：唱歌 🎤</p>
+        <p>想體驗：參觀台灣名勝 🏞️</p>
+        <p>大家好！我是來自越南的阮氏清賢，目前在台灣留學。我熱愛音樂、喜歡認識新朋友，也希望能在旅途中探索台灣的文化與自然之美。</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 阮氏清賢 Nguyen Thi Thanh Hien. All rights reserved.
+  </footer>
+
+</body>
+</html>
