@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>阮氏清賢｜個人介紹</title>
+  <title>阮氏青賢｜個人介紹</title>
+
   <style>
     body {
       font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
@@ -25,7 +27,6 @@
       font-size: 2em;
     }
 
-    /* 🔹 新增 Banner 個人照片 */
     .banner-photo {
       width: 100%;
       height: 350px;
@@ -40,6 +41,7 @@
       flex-direction: column;
       align-items: center;
       margin: 40px 20px;
+      gap: 40px;
     }
 
     .student-card {
@@ -72,9 +74,35 @@
       color: #d63384;
     }
 
-    .student-info p {
-      margin: 8px 0;
-      line-height: 1.6;
+    /* 🔹 Gallery 區塊 */
+    .gallery {
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .gallery h3 {
+      color: #d63384;
+      margin-bottom: 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
     }
 
     footer {
@@ -86,20 +114,22 @@
       font-size: 0.9em;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       .student-card {
         flex-direction: column;
       }
-      .student-card img {
-        width: 100%;
-        height: auto;
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
       }
+
       .banner-photo {
         height: 240px;
       }
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -107,10 +137,11 @@
     <p>越南留學生｜熱愛音樂與旅遊</p>
   </header>
 
-  <!-- 🔹 新增：大幅個人照片 Banner -->
   <div class="banner-photo"></div>
 
   <main>
+
+    <!-- 個人介紹 -->
     <div class="student-card">
       <img src="images/thanhhien.jpeg" alt="阮氏青賢">
       <div class="student-info">
@@ -118,9 +149,23 @@
         <p>國籍：越南｜年齡：21</p>
         <p>興趣：唱歌 🎤</p>
         <p>想體驗：參觀台灣名勝 🏞️</p>
-        <p>大家好！我是來自越南的阮氏清賢，目前在台灣留學。我熱愛音樂、喜歡認識新朋友，也希望能在旅途中探索台灣的文化與自然之美。</p>
+        <p>
+          大家好！我是來自越南的阮氏青賢，目前在台灣留學。
+          我熱愛音樂、喜歡認識新朋友，也希望能在旅途中探索台灣的文化與自然之美。
+        </p>
       </div>
     </div>
+
+    <!-- 🔹 新增：三張照片 -->
+    <section class="gallery">
+      <h3>我的生活照片</h3>
+      <div class="gallery-grid">
+        <img src="images/photo1.jpeg" alt="生活照 1">
+        <img src="images/photo2.jpeg" alt="生活照 2">
+        <img src="images/photo3.jpeg" alt="生活照 3">
+      </div>
+    </section>
+
   </main>
 
   <footer>
